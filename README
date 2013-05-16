@@ -1,0 +1,7 @@
+The project is a flv file merge program.
+it can merge several flv files 
+to a single file.
+
+--compile 
+  make
+
