@@ -12,7 +12,7 @@ CFLAGS= $(OPTFLAGS)
 OBJS= main.o
 
 EXT=
-PROG=../bin/flvmerge
+PROG=./flvmerge
 
 SRCS := $(OBJS:.o=.c) 
 
