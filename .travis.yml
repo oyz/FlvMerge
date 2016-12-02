@@ -1,0 +1,11 @@
+language: c
+install: make
+compiler:
+  - gcc
+deploy:
+  provider: releases
+  file_glob: true
+  file: flvmerge
+  skip_cleanup: true
+  on:
+    tags: true
