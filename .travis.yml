@@ -1,14 +1,14 @@
 language: c
 install: make
 compiler:
-  - gcc
+- gcc
 before_script: make
 script: make
 after_script: make
 deploy:
   provider: releases
-  file_glob: true
+  api_key:
+    secure: BBwQBbgzNRT8cXJWnFUQSDytmElcKiE1WMP8xr9xTZ+G1lMqsCP+YhR722asGe2T2nzEMdDmSXYPNJdeEjUjpx+COapXDnLYgKOb8fLAutNAZ2805Z51oPd3wRWHQ52tueegvAl6rIy2OEH/YEgfeK1KLRYKdvcXX4xusw7Ed22Z/0k6dJ371ZeRpPWYR9PJm/WF/YPLyblJS+4R1rMSSxD4Fl1Umhunr2h2gd1GKdydBI7PmEutEbutSTaS+bSEENvVfatw6MuxQtLGac2CwrAMOUACRiuihr3hAgZAxPUapmRYwU4vmWzXySe00HKMJab76DnftMbXqvgFFiqc0Xhx8n7BBeMrzV5zp2qcSJQA1eYPP3a0OYCO/P9OaiSUfKpu+dp+8cb98gJgo8F0sXoCiSf1CMNICpKBI0YWhoV+wNypMf7TLDICZgFB6x8DS76iNlPKrNTRW5bHDyOn50crS4sxKEhqiir+klXvYstgGkkgsb7TtHXk6RQhiBNTSMEemso7dd1rB3FZX6UCnGsm0bhVoeagT1ePJuIQDC7B0BtT9KSuWl4RjAJCR0zr+tsEovqfrtyDOgNtYkEuSPbE4z80FN8I+X5LKyGkFlb7mVTcnI4Cr+RoiTRY3Gxgw1T9jraW9E9wRhIjbReWAQupo2cEHSyHxq/XYLFLzYc=
   file: flvmerge
-  skip_cleanup: true
   on:
-    tags: true
+    repo: oyz/flvmerge
