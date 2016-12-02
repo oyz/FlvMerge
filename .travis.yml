@@ -2,7 +2,9 @@ language: c
 install: make
 compiler:
   - gcc
+before_script: make
 script: make
+after_script: make
 deploy:
   provider: releases
   file_glob: true
